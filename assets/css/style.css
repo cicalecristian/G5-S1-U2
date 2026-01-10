@@ -1,4 +1,5 @@
 body {
+  width: 100%;
   font-family: "Spectral", serif;
   font-family: "Roboto", sans-serif;
 }
@@ -7,8 +8,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
   background-color: #ffc017;
-  padding: 1.2rem 7rem 1.2rem 10rem;
+  padding: 1.2rem 12rem 1.2rem 10rem;
   border-bottom: 1px solid #191919;
 }
 
@@ -33,6 +40,7 @@ nav ul button {
 
 .navDown {
   display: flex;
+  min-width: 100%;
   padding: 7.5rem 0 7.5rem 10rem;
   background-color: #ffc017;
   border-bottom: 1px solid #191919;
@@ -64,8 +72,235 @@ nav ul button {
   position: absolute;
   align-self: center;
   right: 0;
-  /* width: 100vw;
-  margin-left: calc(50% - 50vw); */
   width: 40rem;
   height: auto;
+}
+
+.sectionMid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0 2rem 8rem;
+  gap: 5px;
+  border-bottom: 1px solid grey;
+}
+#titleSectionMid {
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  font-size: 0.8em;
+  font-weight: bolder;
+  gap: 10px;
+}
+
+#titleSectionMid img {
+  width: 30px;
+  height: auto;
+}
+
+.sectionMid h3 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #e8e8e8;
+}
+
+.sectionMid img {
+  width: 22px;
+  height: auto;
+}
+
+.sectionMid div {
+  flex-basis: 33%;
+}
+
+.article {
+  display: flex;
+  gap: 20px;
+  padding-top: 1.5em;
+}
+
+.articleContent {
+  flex-grow: 1;
+  line-height: 1em;
+  position: relative;
+}
+
+.articleContent p:nth-of-type(1) {
+  display: inline-block;
+  margin-top: 0.5em;
+  margin-left: 2em;
+  padding: 0;
+  font-weight: bold;
+}
+
+.articleContent p:nth-of-type(2) {
+  padding: 1em 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.articleContent span {
+  color: grey;
+}
+
+.imgCircle {
+  border-radius: 50px;
+  position: absolute;
+  top: 0.2em;
+}
+
+.imgRounded {
+  border-radius: 3px;
+  position: absolute;
+  top: 0.2em;
+}
+
+.starArticle {
+  position: absolute;
+  top: 5.7em;
+  left: 8.7em;
+}
+
+.endPage {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 5rem 0 3rem 6rem;
+  width: 100%;
+}
+
+.endPage article {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 50px;
+  padding: 1rem;
+}
+
+.imgContent img {
+  width: 17em;
+  height: auto;
+}
+
+.userImg {
+  width: 20px;
+  height: auto;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  border: 1px solid grey;
+}
+
+.userImg2 {
+  width: 20px;
+  height: auto;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+}
+
+.textContent {
+  position: relative;
+  flex-grow: 1;
+}
+
+.textContent span:nth-of-type(1) {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-left: 2.5em;
+}
+
+.textContent span:nth-of-type(2) {
+  font-size: 0.8em;
+}
+
+.textContent p,
+span:nth-of-type(2) {
+  color: grey;
+}
+
+.textContent p {
+  padding-bottom: 1em;
+}
+
+.textContent h4 {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 0.8em;
+  padding-bottom: 0.5em;
+}
+
+.textContent button {
+  padding: 0.5em 0.8em 0.5em 0.8em;
+  border: 0;
+  border-radius: 20px;
+  color: grey;
+}
+
+.bookmark {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.starContent {
+  position: absolute;
+  bottom: 0;
+}
+
+.endPage section:first-child {
+  flex: 50%;
+}
+
+.endPage section:last-child {
+  flex: 50%;
+  flex-wrap: wrap;
+  width: 5rem;
+  padding: 0;
+}
+
+.endSection2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 150px;
+}
+
+.endSection2 div {
+  width: 25rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.endSection2 h5 {
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.endSection2 button {
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 3px;
+  background-color: white;
+  color: grey;
+  padding: 0.5em 0.8em 0.5em 0.8em;
+  margin: 0.2em;
+}
+
+.endSection2 address {
+  width: 25rem;
+  height: auto;
+  padding-top: 2rem;
+}
+
+.endSection2 ul,
+a {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+  text-decoration: none;
+  color: grey;
 }
