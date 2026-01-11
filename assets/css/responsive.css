@@ -1,0 +1,120 @@
+@media (max-width: 1200px) {
+  nav {
+    padding: 1rem 4rem;
+  }
+
+  .navDown {
+    padding: 8rem 4rem 6rem;
+  }
+
+  .navDown h1 {
+    font-size: 4.5rem;
+  }
+
+  .mWords {
+    width: 22rem;
+  }
+
+  .sectionMid {
+    padding: 2rem 4rem;
+  }
+
+  .sectionMid div {
+    flex-basis: 48%;
+  }
+
+  .endPage {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 4rem 2rem;
+  }
+
+  .endSection1 {
+    order: 2;
+  }
+
+  .endSection2 {
+    order: 1;
+    position: static;
+    align-items: flex-start;
+  }
+
+  .endSection2 div,
+  .endSection2 address {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem 1.5rem;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  .navDown {
+    padding: 6rem 1.5rem 4rem;
+    text-align: center;
+  }
+
+  .mWords {
+    display: none;
+  }
+
+  .navDown h1 {
+    font-size: 3.5rem;
+  }
+
+  .navDiv p {
+    font-size: 1.2em;
+  }
+
+  .sectionMid {
+    padding: 2rem 1.5rem;
+  }
+
+  .sectionMid div {
+    flex-basis: 100%;
+  }
+
+  .article {
+    gap: 10px;
+  }
+
+  .endPage {
+    margin: 2rem 1.5rem;
+  }
+
+  .endPage article {
+    flex-direction: row;
+    padding: 0.5rem 0;
+  }
+
+  .imgContent {
+    max-width: 120px;
+  }
+
+  .textContent h4 {
+    font-size: 1.2em;
+  }
+
+  .endSection1 {
+    order: 2;
+  }
+
+  .endSection2 {
+    order: 1;
+    position: static;
+    align-items: flex-start;
+  }
+
+  .endSection2 div {
+    padding-bottom: 1rem;
+  }
+
+  .endSection2 button {
+    font-size: 0.8em;
+  }
+}
