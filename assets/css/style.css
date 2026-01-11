@@ -1,5 +1,4 @@
 body {
-  width: 100%;
   font-family: "Spectral", serif;
   font-family: "Roboto", sans-serif;
 }
@@ -17,6 +16,11 @@ nav {
   background-color: #ffc017;
   padding: 1.2rem 12rem 1.2rem 10rem;
   border-bottom: 1px solid #191919;
+  transition: background-color 0.3 ease;
+}
+
+.navScrolled {
+  background-color: white;
 }
 
 nav ul,
@@ -36,12 +40,17 @@ nav ul button {
   background-color: #191919;
   color: white;
   font-size: 1em;
+  transition: background-color 0.3 ease;
+}
+
+.navButton {
+  background-color: #1a8917;
 }
 
 .navDown {
   display: flex;
   min-width: 100%;
-  padding: 7.5rem 0 7.5rem 10rem;
+  padding: 10rem 0 7.5rem 10rem;
   background-color: #ffc017;
   border-bottom: 1px solid #191919;
 }
@@ -72,6 +81,7 @@ nav ul button {
   position: absolute;
   align-self: center;
   right: 0;
+  top: 0;
   width: 40rem;
   height: auto;
 }
@@ -175,12 +185,17 @@ nav ul button {
   align-items: center;
   width: 100%;
   height: auto;
-  gap: 50px;
+  gap: 20px;
   padding: 1rem;
 }
 
+.imgContent {
+  width: 100%;
+  max-width: 200px;
+}
+
 .imgContent img {
-  width: 17em;
+  width: 100%;
   height: auto;
 }
 
@@ -296,7 +311,7 @@ span:nth-of-type(2) {
 }
 
 .endSection2 ul,
-a {
+.endSection2 a {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
